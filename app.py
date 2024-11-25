@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # MarketStack API Configuration
 API_URL = "https://api.marketstack.com/v1/eod"
-API_KEY = "94fb4c415487764611b2c41f86c44402"
+API_KEY = "YOUR_API_KEY"
 
 @app.route("/", methods=["GET", "POST"])
 def index():
