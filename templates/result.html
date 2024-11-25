@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card shadow p-4">
+    <h2 class="text-center">Stock Details</h2>
+    <table class="table table-bordered mt-3">
+        <thead class="table-light">
+            <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Symbol</td>
+                <td>{{ stock['symbol'] }}</td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>{{ stock['date'] }}</td>
+            </tr>
+            <tr>
+                <td>Open Price</td>
+                <td>{{ stock['open'] }}</td>
+            </tr>
+            <tr>
+                <td>Close Price</td>
+                <td>{{ stock['close'] }}</td>
+            </tr>
+            <tr>
+                <td>High</td>
+                <td>{{ stock['high'] }}</td>
+            </tr>
+            <tr>
+                <td>Low</td>
+                <td>{{ stock['low'] }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="text-center mt-3">
+        <a href="/" class="btn btn-secondary">Back to Search</a>
+    </div>
+</div>
+{% endblock %}
